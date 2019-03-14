@@ -2,7 +2,7 @@
 
 # Analyse des résultats du Grand Débat National
 
-Courte participation à l'analyse des contributions du [Grand Débat National](https://granddebat.fr/).
+Courte expérimentation sur l'analyse des contributions du [Grand Débat National](https://granddebat.fr/).
 
 Mots clés : NLP, TAL, LDA, Embeddings, TextRank
 
