@@ -4,6 +4,8 @@
 
 Courte participation à l'analyse des contributions du [Grand Débat National](https://granddebat.fr/).
 
+Mots clés : NLP, TAL, LDA, Embeddings, TextRank
+
 Auteurs : [Antoine SIMOULIN](https://github.com/AntoineSimoulin), [Antoine ISNARDY](https://github.com/antisrdy), [Thibaud REAL DEL SARTE](trealdelsarte@quantmetry.com)
 
 **DISCLAIMER** : Quantmetry et les auteurs de ce notebook ne peuvent être tenus responsables de l'interprétation des réponses aux questions posées lors du Grand Débat. Le présent notebook fournit une grille d'analyse desdites réponses, non une interprétation.
