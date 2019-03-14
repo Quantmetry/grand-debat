@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def sentence_to_vec(clean_sentences, file_model='word2vec.38k.150d.txt'):
+def sentence_to_vec(clean_sentences, file_model='word2vec.10k.50d.txt'):
     """
     Use pretrained word2vec model and represent each sentence by a vector.
 
