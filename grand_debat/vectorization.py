@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def sentence_to_vec(clean_sentences, file_model='word2vec.10k.50d.txt'):
+def sentence_to_vec(clean_sentences, file_model='data/word2vec.10k.100d.txt'):
     """
     Use pretrained word2vec model and represent each sentence by a vector.
 
@@ -32,7 +32,7 @@ def sentence_to_vec(clean_sentences, file_model='word2vec.10k.50d.txt'):
     sentence_vectors = []
     for i in clean_sentences:
         if len(i) != 0:
-            v = sum([word_embeddings.get(w, np.zeros((150,))) for w in i.split()]) / (len(i.split())+0.001)
+            v = sum([word_embeddings.get(w, np.zeros((100,))) for w in i.split()]) / (len(i.split())+0.001)
         else:
             v = np.zeros((100,))
         sentence_vectors.append(v)

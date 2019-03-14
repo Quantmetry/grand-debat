@@ -46,9 +46,9 @@ def create_final_doc(title_sentences, titles, clean_sentences, sentences_paragra
             sentences_summary_emb = []
             for j in sentences_summary:
                 if len(j) != 0:
-                    v = sum([word_embeddings.get(w, np.zeros((150,))) for w in j.split()])/(len(j.split())+0.001)
+                    v = sum([word_embeddings.get(w, np.zeros((100,))) for w in j.split()])/(len(j.split())+0.001)
                 else:
-                    v = np.zeros((150,))
+                    v = np.zeros((100,))
                 sentences_summary_emb.append(v)
 
             sim_mat = cosine_similarity(sentences_summary_emb)

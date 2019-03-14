@@ -70,7 +70,7 @@ def apply_page_rank_algorithm(clean_sentences, sentences_paragraph, word_embeddi
     sentences_summary_emb = []
     for i in sentences_summary:
         if len(i) != 0:
-            v = sum([word_embeddings.get(w, np.zeros((150,))) for w in i.split()])/(len(i.split())+0.001)
+            v = sum([word_embeddings.get(w, np.zeros((100,))) for w in i.split()])/(len(i.split())+0.001)
         else:
             v = np.zeros((100,))
         sentences_summary_emb.append(v)

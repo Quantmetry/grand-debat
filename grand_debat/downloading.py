@@ -66,4 +66,4 @@ def download_data(themes, selected_theme):
             if os.path.isfile('data/' + theme[2:] + '.json'):
                 os.remove('data/' + theme[2:] + '.json')
             wget.download(link, 'data/' + theme[2:] + '.json')
-            print('Données les plus récentes associées au thème ' + str(selected_theme) + ' sauvegardée à ' + 'data/' + theme[2:] + '.json')
+            print('Données les plus récentes associées au thème ' + str(selected_theme) + ' sauvegardées à ' + 'data/' + theme[2:] + '.json')
