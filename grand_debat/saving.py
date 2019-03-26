@@ -53,7 +53,10 @@ def create_final_doc(title_sentences, titles, clean_sentences, sentences_paragra
 
             sim_mat = cosine_similarity(sentences_summary_emb)
             nx_graph = nx.from_numpy_array(sim_mat)
-            scores = nx.pagerank(nx_graph)
+            try:
+                scores = nx.pagerank(nx_graph)
+            except:
+                scores = nx.pagerank_numpy(nx_graph)
             ranked_sentences = sorted(((scores[j],s) for j, s in enumerate(sentences_summary)), reverse=True)
 
             sn = min(3, len(ranked_sentences))

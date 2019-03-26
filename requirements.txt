@@ -8,3 +8,4 @@ docx==0.2.4
 gensim==3.7.1
 pyLDAvis==2.1.2
 scikit_learn==0.20.3
+python-docx==0.8.9

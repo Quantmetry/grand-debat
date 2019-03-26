@@ -76,7 +76,10 @@ def apply_page_rank_algorithm(clean_sentences, sentences_paragraph, word_embeddi
         sentences_summary_emb.append(v)
     sim_mat = cosine_similarity(sentences_summary_emb)
     nx_graph = nx.from_numpy_array(sim_mat)
-    scores = nx.pagerank(nx_graph)
+    try:
+        scores = nx.pagerank(nx_graph)
+    except:
+        scores = nx.pagerank_numpy(nx_graph)
     ranked_sentences = sorted(((scores[i],s) for i,s in enumerate(sentences_summary)), reverse=True)
     for i in range(sn):
         print('•', ranked_sentences[i][1], '\n')
